@@ -1,0 +1,23 @@
+<div>
+    <h3>Productos</h3>
+    {{#if product}}
+    <section class="table-responsive">
+        <table class="table table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+            </tr>
+            {{#each product}}
+            <tr>
+                <td>{{this.nombre}}</td>
+                <td>{{this.precio}}</td>
+                <td><img class="imagen"src="{{this.foto}}" alt="{{this.nombre}}"></td>
+            </tr>
+            {{/each}}
+        </table>
+    </section>
+    {{else}}
+    <h5 class="alert alert-danger">No hay productos</h5>
+    {{/if}}
+</div>

@@ -1,0 +1,34 @@
+#mensajes{
+    background-color: #252525;
+    margin: 0 auto;
+    width: 60vw;
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+#mensajes p{
+   text-align: center;
+}
+
+#mensajes p .usuario{
+    font-weight: 700;
+    color: aqua;
+}
+#mensajes p .fecha{
+    color: gray;
+}
+#mensajes p .mensaje{
+    color: white;
+}
+
+.imagen{
+    height: 7rem;
+}
+
+#enviarMensaje{
+    text-align: center;
+}
+
+#enviarMensaje input{
+    margin: 2rem 0;
+}

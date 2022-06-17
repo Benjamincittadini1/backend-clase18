@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>WebSockets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <h2>ingrese un producto</h2>
+
+  <form action="/api/productos" method="POST" id="ingresarProducto">
+    Nombre: <input type="text" name="nombre">
+    Precio: <input type="number" name="precio">
+    Foto: <input type="url" name="foto">
+    <input type="submit" value="Agregar producto" />
+  </form>
+  <div id="productos"></div>
+
+  <form id="enviarMensaje">
+    <h2>Centro de Mensajes</h2>
+    <input type="email" id="usuario" placeholder="Ingrese su mail">
+    <div id="mensajes"></div>
+    <input type="text" id="mensaje" placeholder="Tu mensaje">
+    <input type="submit" value="Enviar">
+  </form>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

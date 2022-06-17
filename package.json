@@ -1,0 +1,19 @@
+{
+  "name": "desafio-clase-16",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.4",
+    "knex": "^2.0.0",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.4.1",
+    "sqlite3": "^5.0.5"
+  }
+}
